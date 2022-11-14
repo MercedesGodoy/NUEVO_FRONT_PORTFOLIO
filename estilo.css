@@ -41,9 +41,6 @@ body {
 }
 
 
-.contenedor_botones{
-    align-items: center;
-}
 .boton {
     font-size: 25px;
     border: none;
@@ -55,8 +52,15 @@ body {
     cursor: pointer;
 }
 
-button span {
+.boton span {
     width: 100%;
+}
+
+.editar {
+ width: 5rem;
+ margin-left: 100%;
+ margin-top: -20%;
+ height: 2rem;
 }
 
 
