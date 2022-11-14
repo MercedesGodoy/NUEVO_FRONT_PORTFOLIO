@@ -1,0 +1,15 @@
+CENTRAR TEXTO
+
+text-align: center -> quedan todas las líneas centradas dentro del margen del párrafo
+
+centrar horizontalmente una imagen o bloque:
+margin-left: auto
+margin-rigth: auto
+
+para imagen: display: block
+
+centrar verticalmente una imagen o bloque:
+
+tocar el contenedor no al elemento
+display: table-cell
+vertical-align: middle
