@@ -1,20 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html {
+    min-height: 100%;
+}
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    min-height: 100%;
+} */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100%;
+}
+
+header {
+    min-height: 5vh;
+    background-color: black;
+    color: #fcffff;
+}
+
+.contenedor-principal {
+    min-height: 85vh;
+}
+.logo {
+    height: 2rem;
+}
+
+.div-principal {
+    height: 100%;
+    width: ;
 }
 #left {
     background-color: #fcffff;
+    min-height: 85vh;
 }
 
 #right {
     background-color: #b49ec0;
+    min-height: 15vh;
+    
 }
 .foto_perfil{
-    height: 13em;
+    height: 18em;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(66, 7, 66, 0.2), 0 6px 20px;
+    margin-left: 50%;
 }
 
 .contenedor_titulo {
@@ -42,7 +76,7 @@ body {
 
 
 .boton {
-    font-size: 25px;
+    font-size: 20px;
     border: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #514a55;
@@ -50,6 +84,16 @@ body {
     color: #fcffff;
     letter-spacing: 0.03em;
     cursor: pointer;
+    margin: 1rem;
+    text-decoration:none;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+    border-radius:5em;
+}
+.contenedor_botones {
+    margin-top: 5rem;
+    
+
 }
 
 .boton span {
@@ -57,10 +101,85 @@ body {
 }
 
 .editar {
- width: 5rem;
- margin-left: 100%;
- margin-top: -20%;
- height: 2rem;
+    font-size: 25px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.5;
+    color: #fcffff;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    margin: 1rem;
+    text-decoration:none;
+    border-radius: 50%;
+    text-transform: lowercase;
+    margin-left: 95%;
 }
 
+/* cometario: estilo de botones de contacto */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+ a {
+    text-decoration: none;
+ }
+ ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 0;
+ }
+ ul div {
+    width: 40px;
+    height: 5px;
+    background-color: #9581f4;
+    margin: auto;
+ }
+
+ ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    margin: 0 0.2px;
+ }
+
+ ul li span {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: #b49ec0;
+    justify-content: center;
+    align-items: center;
+    color: rgb(19, 17, 17);
+    font-size: 30px !important;
+    transition: 1.5s ease-out;
+ }
+
+ ul li:hover span{
+    transition: .1s;
+ }
+
+ ul li:nth-child(1):hover span {
+    color: #514a55 !important;
+    font-size: 50px !important;
+ }
+ ul li:nth-child(2):hover span {
+    color: #514a55 !important;
+    font-size: 50px !important;
+ }
+ ul li:nth-child(3):hover span {
+    color:  #514a55 !important;
+    font-size: 50px !important;
+ }
+ ul li:nth-child(4):hover span {
+    color: #514a55 !important;
+    font-size: 50px !important;
+ }
+
+ .contenedor_contacto ul{
+    margin-left: 30%;
+    margin-top: 10%;
+    
+}
